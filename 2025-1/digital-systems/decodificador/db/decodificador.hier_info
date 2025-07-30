@@ -1,0 +1,33 @@
+|decodificador
+SW[14] => segb.IN0
+SW[14] => segd.IN1
+SW[14] => segd.IN0
+SW[14] => sege.IN1
+SW[14] => segf.IN0
+SW[14] => segf.IN1
+SW[14] => segg.IN1
+SW[14] => segc.IN1
+SW[14] => sega.IN1
+SW[15] => segb.IN1
+SW[15] => segd.IN1
+SW[15] => segf.IN1
+SW[15] => segf.IN0
+SW[15] => segg.IN0
+SW[15] => segg.IN1
+SW[15] => sege.IN0
+SW[16] => segb.IN1
+SW[16] => segd.IN1
+SW[16] => sege.IN1
+SW[16] => segg.IN1
+SW[16] => segg.IN0
+SW[16] => segf.IN1
+SW[17] => segg.IN1
+HEX0[0] <= sega.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= segb.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= segc.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= segd.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= sege.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= segf.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= segg.DB_MAX_OUTPUT_PORT_TYPE
+
+

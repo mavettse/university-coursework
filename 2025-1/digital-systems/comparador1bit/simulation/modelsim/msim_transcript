@@ -1,0 +1,37 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do comparador1bit_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/gioes/Documents/AtividadesSD/comparador1bit {C:/Users/gioes/Documents/AtividadesSD/comparador1bit/comparador1bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparador1bit
+# 
+# Top level modules:
+# 	comparador1bit
+# 
+vsim work.comparador1bit
+# vsim work.comparador1bit 
+# Loading work.comparador1bit
+force -freeze {sim:/comparador1bit/SW[17]} 1 0, 0 {50 ps} -r 100
+force -freeze {sim:/comparador1bit/SW[17]} 1 0, 0 {50 ps} -r 100
+force -freeze {sim:/comparador1bit/SW[0]} 1 0, 0 {100 ps} -r 200
+wave create -pattern clock -initialvalue StX -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/comparador1bit/a
+wave create -pattern clock -initialvalue StX -period 200ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/comparador1bit/b
+add wave -position insertpoint  \
+sim:/comparador1bit/maior
+add wave -position insertpoint  \
+sim:/comparador1bit/igual
+add wave -position insertpoint  \
+sim:/comparador1bit/menor
+run -all
+quit
+# Break key hit 
+# Simulation stop requested.

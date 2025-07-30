@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\gioes\Documents\AtividadesSD\farol\simulation\modelsim
+vfarol
+!i10b 1
+!s100 3Z7e=0O>?^LNBaHVmdG9J0
+I4c3MV^l`S:f5oDc:`A?]91
+V;aBHR3PkmJ]JC3n9zU@Z70
+Z1 dC:\Users\gioes\Documents\AtividadesSD\farol\simulation\modelsim
+w1749070491
+8C:/Users/gioes/Documents/AtividadesSD/farol/farol.v
+FC:/Users/gioes/Documents/AtividadesSD/farol/farol.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1749070776.818000
+!s107 C:/Users/gioes/Documents/AtividadesSD/farol/farol.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gioes/Documents/AtividadesSD/farol|C:/Users/gioes/Documents/AtividadesSD/farol/farol.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/gioes/Documents/AtividadesSD/farol -O0

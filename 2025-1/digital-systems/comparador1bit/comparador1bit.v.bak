@@ -1,0 +1,18 @@
+module comparador1bit(LEDR, SW);
+	input SW[17], SW[0];
+	output LEDR[17], LEDR[10], LEDR[0];
+
+	wire maior, igual, menor, a, b;
+	
+	assign a = SW[17];
+	assign b = SW[0];
+	
+	assign maior = a & ~b;
+	assign igual = a ~^ b;
+	assign menor = ~a & b;
+	
+	assign LEDR[17] = maior;
+	assign LEDR[10] = igual;
+	assign LEDR[0] = menor;
+	
+endmodule

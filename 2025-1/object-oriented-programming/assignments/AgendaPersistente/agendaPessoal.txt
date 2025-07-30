@@ -1,0 +1,4 @@
+Lu Melhor Prof;40028922;Rua das MaisMais, 10;luthebest@gmail.com
+Lucas Gabriel;123456789; Rua dos Amigos, 3;lucasmota@gmail.com
+Eduarda Lyandra;31654987;Rua das Irmãs, 96;dudinha123@gmail.com
+Giovanni Estevam;44444444;Rua dos Lindões, 44;tevinhoteteu@gmail.com

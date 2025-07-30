@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\gioes\Documents\AtividadesSD\comparador1bit\simulation\modelsim
+vcomparador1bit
+!i10b 1
+!s100 7:aKA_heM0P7OR^VI0HzS1
+ILkITk]<KT@nI?CHhzQmYA2
+VIVER;GNlNY71dV8XhT6bQ2
+Z1 dC:\Users\gioes\Documents\AtividadesSD\comparador1bit\simulation\modelsim
+w1749084224
+8C:/Users/gioes/Documents/AtividadesSD/comparador1bit/comparador1bit.v
+FC:/Users/gioes/Documents/AtividadesSD/comparador1bit/comparador1bit.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1749084371.649000
+!s107 C:/Users/gioes/Documents/AtividadesSD/comparador1bit/comparador1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gioes/Documents/AtividadesSD/comparador1bit|C:/Users/gioes/Documents/AtividadesSD/comparador1bit/comparador1bit.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/gioes/Documents/AtividadesSD/comparador1bit -O0

@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/gioes/Documents/AtividadesSD/farol/farol.v
+source_file = 1, C:/Users/gioes/Documents/AtividadesSD/farol/db/farol.cbx.xml
+design_name = farol
+instance = comp, \c~I , c, farol, 1
+instance = comp, \f~I , f, farol, 1
+instance = comp, \p~I , p, farol, 1
+instance = comp, \s~0 , s~0, farol, 1
+instance = comp, \s~I , s, farol, 1

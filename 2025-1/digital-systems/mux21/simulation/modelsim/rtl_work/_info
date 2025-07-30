@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\gioes\Documents\AtividadesSD\mux21\simulation\modelsim
+vmux2por1
+!i10b 1
+!s100 Hhd40K:m<?6oQi;[lLlh[1
+IS1DAS?;AAHDgLV6?9QIU83
+VdW6i69e;3m@>O[E@8A75d0
+Z1 dC:\Users\gioes\Documents\AtividadesSD\mux21\simulation\modelsim
+w1750280245
+8C:/Users/gioes/Documents/AtividadesSD/mux21/mux2por1.v
+FC:/Users/gioes/Documents/AtividadesSD/mux21/mux2por1.v
+L0 5
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1750280366.283000
+!s107 C:/Users/gioes/Documents/AtividadesSD/mux21/mux2por1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gioes/Documents/AtividadesSD/mux21|C:/Users/gioes/Documents/AtividadesSD/mux21/mux2por1.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/gioes/Documents/AtividadesSD/mux21 -O0

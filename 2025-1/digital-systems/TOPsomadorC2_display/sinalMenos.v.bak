@@ -1,0 +1,14 @@
+// Giovanni Estevam Dos Santos
+// 12/06/2025
+// projeto somador com complemento de 2 no display
+
+module sinalMenos(bitSinal, seg);
+	input bitSinal;
+	output [6:0] seg;
+			
+	assign seg[5:0] = 6'b111111;
+	assign seg[6] = ~bitSinal;
+
+	assign seg = {segg, segf, sege, segd, segc, segb, sega};		
+	
+endmodule

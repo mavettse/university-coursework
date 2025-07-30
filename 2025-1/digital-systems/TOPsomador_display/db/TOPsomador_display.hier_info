@@ -1,0 +1,185 @@
+|TOPsomador_display
+SW[0] => B[0].IN1
+SW[1] => B[1].IN1
+SW[2] => B[2].IN1
+SW[3] => B[3].IN1
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+SW[10] => TE0.IN1
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => A[0].IN1
+SW[15] => A[1].IN1
+SW[16] => A[2].IN1
+SW[17] => A[3].IN1
+HEX0[0] <= decodificador:comb_15.port1
+HEX0[1] <= decodificador:comb_15.port1
+HEX0[2] <= decodificador:comb_15.port1
+HEX0[3] <= decodificador:comb_15.port1
+HEX0[4] <= decodificador:comb_15.port1
+HEX0[5] <= decodificador:comb_15.port1
+HEX0[6] <= decodificador:comb_15.port1
+HEX1[0] <= decodificador:comb_14.port1
+HEX1[1] <= decodificador:comb_14.port1
+HEX1[2] <= decodificador:comb_14.port1
+HEX1[3] <= decodificador:comb_14.port1
+HEX1[4] <= decodificador:comb_14.port1
+HEX1[5] <= decodificador:comb_14.port1
+HEX1[6] <= decodificador:comb_14.port1
+
+
+|TOPsomador_display|somador4bits:soma
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+te0 => te0.IN1
+s[0] <= somador1bit:bit0.port3
+s[1] <= somador1bit:bit1.port3
+s[2] <= somador1bit:bit2.port3
+s[3] <= somador1bit:bit3.port3
+s[4] <= somador1bit:bit4.port3
+s[5] <= somador1bit:bitS.port3
+
+
+|TOPsomador_display|somador4bits:soma|somador1bit:bit0
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomador_display|somador4bits:soma|somador1bit:bit1
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomador_display|somador4bits:soma|somador1bit:bit2
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomador_display|somador4bits:soma|somador1bit:bit3
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomador_display|somador4bits:soma|somador1bit:bit4
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomador_display|somador4bits:soma|somador1bit:bitS
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomador_display|decodificador:comb_14
+bcd[0] => segb.IN0
+bcd[0] => segd.IN1
+bcd[0] => segd.IN0
+bcd[0] => sege.IN1
+bcd[0] => segf.IN0
+bcd[0] => segf.IN1
+bcd[0] => segg.IN1
+bcd[0] => segc.IN1
+bcd[0] => sega.IN1
+bcd[1] => segb.IN1
+bcd[1] => segd.IN1
+bcd[1] => segf.IN1
+bcd[1] => segf.IN0
+bcd[1] => segg.IN0
+bcd[1] => segg.IN1
+bcd[1] => sege.IN0
+bcd[2] => segb.IN1
+bcd[2] => segd.IN1
+bcd[2] => sege.IN1
+bcd[2] => segg.IN1
+bcd[2] => segg.IN0
+bcd[2] => segf.IN1
+bcd[3] => segg.IN1
+seg[0] <= sega.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= segb.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= segc.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= segd.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= sege.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= segf.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= segg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomador_display|decodificador:comb_15
+bcd[0] => segb.IN0
+bcd[0] => segd.IN1
+bcd[0] => segd.IN0
+bcd[0] => sege.IN1
+bcd[0] => segf.IN0
+bcd[0] => segf.IN1
+bcd[0] => segg.IN1
+bcd[0] => segc.IN1
+bcd[0] => sega.IN1
+bcd[1] => segb.IN1
+bcd[1] => segd.IN1
+bcd[1] => segf.IN1
+bcd[1] => segf.IN0
+bcd[1] => segg.IN0
+bcd[1] => segg.IN1
+bcd[1] => sege.IN0
+bcd[2] => segb.IN1
+bcd[2] => segd.IN1
+bcd[2] => sege.IN1
+bcd[2] => segg.IN1
+bcd[2] => segg.IN0
+bcd[2] => segf.IN1
+bcd[3] => segg.IN1
+seg[0] <= sega.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= segb.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= segc.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= segd.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= sege.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= segf.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= segg.DB_MAX_OUTPUT_PORT_TYPE
+
+

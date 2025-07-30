@@ -1,0 +1,336 @@
+|TOPsomadorC2_display
+SW[0] => B[0].IN1
+SW[1] => B[1].IN1
+SW[2] => B[2].IN1
+SW[3] => B[3].IN1
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+SW[10] => TE0.IN1
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => A[0].IN1
+SW[15] => A[1].IN1
+SW[16] => A[2].IN1
+SW[17] => A[3].IN1
+HEX0[0] <= decodificador:comb_50.port1
+HEX0[1] <= decodificador:comb_50.port1
+HEX0[2] <= decodificador:comb_50.port1
+HEX0[3] <= decodificador:comb_50.port1
+HEX0[4] <= decodificador:comb_50.port1
+HEX0[5] <= decodificador:comb_50.port1
+HEX0[6] <= decodificador:comb_50.port1
+HEX1[0] <= decodificador:comb_49.port1
+HEX1[1] <= decodificador:comb_49.port1
+HEX1[2] <= decodificador:comb_49.port1
+HEX1[3] <= decodificador:comb_49.port1
+HEX1[4] <= decodificador:comb_49.port1
+HEX1[5] <= decodificador:comb_49.port1
+HEX1[6] <= decodificador:comb_49.port1
+HEX2[0] <= sinalMenos:comb_51.port1
+HEX2[1] <= sinalMenos:comb_51.port1
+HEX2[2] <= sinalMenos:comb_51.port1
+HEX2[3] <= sinalMenos:comb_51.port1
+HEX2[4] <= sinalMenos:comb_51.port1
+HEX2[5] <= sinalMenos:comb_51.port1
+HEX2[6] <= sinalMenos:comb_51.port1
+HEX3[0] <= <VCC>
+HEX3[1] <= <VCC>
+HEX3[2] <= <VCC>
+HEX3[3] <= <VCC>
+HEX3[4] <= <VCC>
+HEX3[5] <= <VCC>
+HEX3[6] <= <VCC>
+HEX4[0] <= <VCC>
+HEX4[1] <= <VCC>
+HEX4[2] <= <VCC>
+HEX4[3] <= <VCC>
+HEX4[4] <= <VCC>
+HEX4[5] <= <VCC>
+HEX4[6] <= <VCC>
+HEX5[0] <= <VCC>
+HEX5[1] <= <VCC>
+HEX5[2] <= <VCC>
+HEX5[3] <= <VCC>
+HEX5[4] <= <VCC>
+HEX5[5] <= <VCC>
+HEX5[6] <= <VCC>
+HEX6[0] <= <VCC>
+HEX6[1] <= <VCC>
+HEX6[2] <= <VCC>
+HEX6[3] <= <VCC>
+HEX6[4] <= <VCC>
+HEX6[5] <= <VCC>
+HEX6[6] <= <VCC>
+HEX7[0] <= <VCC>
+HEX7[1] <= <VCC>
+HEX7[2] <= <VCC>
+HEX7[3] <= <VCC>
+HEX7[4] <= <VCC>
+HEX7[5] <= <VCC>
+HEX7[6] <= <VCC>
+
+
+|TOPsomadorC2_display|somador4bits:soma
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => bT.IN0
+b[1] => bT.IN0
+b[2] => bT.IN0
+b[3] => bT.IN0
+te0 => te0.IN3
+s[0] <= somador1bit:bit0.port3
+s[1] <= somador1bit:bit1.port3
+s[2] <= somador1bit:bit2.port3
+s[3] <= somador1bit:bit3.port3
+s[4] <= somador1bit:bit4.port3
+s[5] <= somador1bit:bitS.port3
+
+
+|TOPsomadorC2_display|somador4bits:soma|somador1bit:bit0
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|somador4bits:soma|somador1bit:bit1
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|somador4bits:soma|somador1bit:bit2
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|somador4bits:soma|somador1bit:bit3
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|somador4bits:soma|somador1bit:bit4
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|somador4bits:soma|somador1bit:bitS
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|modulo:somaTransformada
+s[0] => invertido.IN0
+s[1] => invertido.IN0
+s[2] => invertido.IN0
+s[3] => invertido.IN0
+s[4] => invertido.IN0
+s[5] => bitSinal.IN1
+sT[0] <= somador6bits:comb_10.port2
+sT[1] <= somador6bits:comb_10.port2
+sT[2] <= somador6bits:comb_10.port2
+sT[3] <= somador6bits:comb_10.port2
+sT[4] <= somador6bits:comb_10.port2
+sT[5] <= somador6bits:comb_10.port2
+bitSinal <= bitSinal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|modulo:somaTransformada|somador6bits:comb_10
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+te0 => te0.IN1
+s[0] <= somador1bit:bit0.port3
+s[1] <= somador1bit:bit1.port3
+s[2] <= somador1bit:bit2.port3
+s[3] <= somador1bit:bit3.port3
+s[4] <= somador1bit:bit4.port3
+s[5] <= somador1bit:bit5.port3
+
+
+|TOPsomadorC2_display|modulo:somaTransformada|somador6bits:comb_10|somador1bit:bit0
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|modulo:somaTransformada|somador6bits:comb_10|somador1bit:bit1
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|modulo:somaTransformada|somador6bits:comb_10|somador1bit:bit2
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|modulo:somaTransformada|somador6bits:comb_10|somador1bit:bit3
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|modulo:somaTransformada|somador6bits:comb_10|somador1bit:bit4
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|modulo:somaTransformada|somador6bits:comb_10|somador1bit:bit5
+a => s.IN0
+a => ts.IN0
+b => s.IN1
+b => ts.IN1
+te => s.IN1
+te => ts.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+ts <= ts.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|decodificador:comb_49
+bcd[0] => segb.IN0
+bcd[0] => segd.IN1
+bcd[0] => segd.IN0
+bcd[0] => sege.IN1
+bcd[0] => segf.IN0
+bcd[0] => segf.IN1
+bcd[0] => segg.IN1
+bcd[0] => segc.IN1
+bcd[0] => sega.IN1
+bcd[1] => segb.IN1
+bcd[1] => segd.IN1
+bcd[1] => segf.IN1
+bcd[1] => segf.IN0
+bcd[1] => segg.IN0
+bcd[1] => segg.IN1
+bcd[1] => sege.IN0
+bcd[2] => segb.IN1
+bcd[2] => segd.IN1
+bcd[2] => sege.IN1
+bcd[2] => segg.IN1
+bcd[2] => segg.IN0
+bcd[2] => segf.IN1
+bcd[3] => segg.IN1
+seg[0] <= sega.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= segb.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= segc.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= segd.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= sege.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= segf.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= segg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|decodificador:comb_50
+bcd[0] => segb.IN0
+bcd[0] => segd.IN1
+bcd[0] => segd.IN0
+bcd[0] => sege.IN1
+bcd[0] => segf.IN0
+bcd[0] => segf.IN1
+bcd[0] => segg.IN1
+bcd[0] => segc.IN1
+bcd[0] => sega.IN1
+bcd[1] => segb.IN1
+bcd[1] => segd.IN1
+bcd[1] => segf.IN1
+bcd[1] => segf.IN0
+bcd[1] => segg.IN0
+bcd[1] => segg.IN1
+bcd[1] => sege.IN0
+bcd[2] => segb.IN1
+bcd[2] => segd.IN1
+bcd[2] => sege.IN1
+bcd[2] => segg.IN1
+bcd[2] => segg.IN0
+bcd[2] => segf.IN1
+bcd[3] => segg.IN1
+seg[0] <= sega.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= segb.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= segc.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= segd.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= sege.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= segf.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= segg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOPsomadorC2_display|sinalMenos:comb_51
+bitSinal => seg[6].DATAIN
+seg[0] <= <VCC>
+seg[1] <= <VCC>
+seg[2] <= <VCC>
+seg[3] <= <VCC>
+seg[4] <= <VCC>
+seg[5] <= <VCC>
+seg[6] <= bitSinal.DB_MAX_OUTPUT_PORT_TYPE
+
+

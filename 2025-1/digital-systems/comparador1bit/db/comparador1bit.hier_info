@@ -1,0 +1,12 @@
+|comparador1bit
+a => maior.IN0
+a => igual.IN0
+a => menor.IN0
+b => igual.IN1
+b => menor.IN1
+b => maior.IN1
+maior <= maior.DB_MAX_OUTPUT_PORT_TYPE
+igual <= igual.DB_MAX_OUTPUT_PORT_TYPE
+menor <= menor.DB_MAX_OUTPUT_PORT_TYPE
+
+

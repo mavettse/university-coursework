@@ -1,0 +1,11 @@
+module somador1bit(a, b, te, s, ts);
+	input a, b, te;
+	output s, ts;
+	
+	wire bT = (b ~^ te);
+	
+	
+	assign s = (a^bT^te);
+	assign ts = ((a & bT) | (te & (a ^ bT)));
+	
+endmodule
