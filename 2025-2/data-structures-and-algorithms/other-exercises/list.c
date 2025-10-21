@@ -93,7 +93,6 @@ int main(){
     // armazena o nome do arquivo de entrada
     char arquivo[50];
     printf("Digite o nome do arquivo de entrada: ");
-    getchar();
     scanf("%s", arquivo);
 
     // abre o arquivo
@@ -104,9 +103,11 @@ int main(){
         return 1;
     }
 
-    // fazendo a leitura de dentro do arquivo
+    // fazendo a leitura de dentro do arquivo e descartando o caractere nulo no final de linha
     int K;
+    char temp[10];
     fscanf(ptr_arquivo, "%d", &K);
+    fgets(temp, sizeof(temp), ptr_arquivo);
 
     // cria um vetor de K listas alocado dinamicamente
     TipoLista *listas;
